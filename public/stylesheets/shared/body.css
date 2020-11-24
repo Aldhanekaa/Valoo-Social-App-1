@@ -1,0 +1,26 @@
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: static;
+  top: 0;
+  height: 340px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b1019), color-stop(300%, #5f94e3));
+  background: linear-gradient(#0b1019, #5f94e3 300%);
+  z-index: 1;
+}
+
+.body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=body.css.map */

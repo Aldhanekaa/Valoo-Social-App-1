@@ -1,0 +1,16 @@
+@import "./shared/body.scss";
+@import "./shared/navbar.scss";
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  box-sizing: unset;
+  padding-bottom: 50px;
+  margin: 0;
+    padding-bottom: 100px;
+}

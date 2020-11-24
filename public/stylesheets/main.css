@@ -1,0 +1,162 @@
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: static;
+  top: 0;
+  height: 340px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0b1019), color-stop(300%, #5f94e3));
+  background: linear-gradient(#0b1019, #5f94e3 300%);
+  z-index: 1;
+}
+
+.body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  margin: 40px auto 60px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+}
+
+.navigation a {
+  position: relative;
+  padding: 10px 14px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #4b4b4b;
+  background: #fff;
+  -webkit-transition: color 300ms ease, -webkit-box-shadow 120ms ease;
+  transition: color 300ms ease, -webkit-box-shadow 120ms ease;
+  transition: color 300ms ease, box-shadow 120ms ease;
+  transition: color 300ms ease, box-shadow 120ms ease, -webkit-box-shadow 120ms ease;
+}
+
+.navigation a:hover {
+  color: #69A4FC;
+  -webkit-box-shadow: 0 5px 54px #69A4FC;
+          box-shadow: 0 5px 54px #69A4FC;
+  -webkit-transition: color 120ms ease, -webkit-box-shadow 200ms ease;
+  transition: color 120ms ease, -webkit-box-shadow 200ms ease;
+  transition: color 120ms ease, box-shadow 200ms ease;
+  transition: color 120ms ease, box-shadow 200ms ease, -webkit-box-shadow 200ms ease;
+}
+
+.navigation a:first-child {
+  border-radius: 2px 0 0 2px;
+  z-index: 12;
+}
+
+.navigation a:nth-child(2) {
+  z-index: 13;
+  -webkit-transition: color 300ms ease, z-index 200ms, -webkit-box-shadow 120ms ease;
+  transition: color 300ms ease, z-index 200ms, -webkit-box-shadow 120ms ease;
+  transition: color 300ms ease, box-shadow 120ms ease, z-index 200ms;
+  transition: color 300ms ease, box-shadow 120ms ease, z-index 200ms, -webkit-box-shadow 120ms ease;
+}
+
+.navigation a:nth-child(2):hover {
+  z-index: 10;
+  -webkit-transition: color 120ms ease, z-index 0ms, -webkit-box-shadow 200ms ease;
+  transition: color 120ms ease, z-index 0ms, -webkit-box-shadow 200ms ease;
+  transition: color 120ms ease, box-shadow 200ms ease, z-index 0ms;
+  transition: color 120ms ease, box-shadow 200ms ease, z-index 0ms, -webkit-box-shadow 200ms ease;
+}
+
+.navigation a:nth-child(3) {
+  margin-right: 10px;
+  border-radius: 0 2px 2px 0;
+  z-index: 12;
+}
+
+.navigation a:last-child {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0);
+          box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0);
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.navigation a:last-child:hover {
+  color: #fff;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+          box-shadow: inset 0 0 0 1px #fff;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.navigation-name {
+  margin-left: 10px;
+  color: #fff;
+  text-shadow: 0 1px #000;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.navigation-name:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  height: 28px;
+  width: 28px;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 28px;
+}
+
+.logo:hover {
+  color: #69A4FC;
+}
+
+.logo:hover + .navigation-name {
+  color: #69A4FC;
+}
+
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  padding-bottom: 50px;
+  margin: 0;
+  padding-bottom: 100px;
+}
+/*# sourceMappingURL=main.css.map */

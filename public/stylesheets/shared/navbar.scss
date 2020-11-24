@@ -1,0 +1,109 @@
+nav {
+    @extend %section;
+    margin: 40px auto 60px;
+    align-content: center;
+    align-items: center;
+  }
+  
+  
+  // navigation link 
+  .navigation {
+    display: flex;
+    margin-left: auto;
+    
+    a {
+      position: relative;
+      padding: 10px 14px;
+      font-size: 14px; 
+      text-decoration: none;
+      color: #4b4b4b;
+      background: #fff;
+      transition: color 300ms ease, box-shadow 120ms ease;
+      
+      &:hover {
+        color: $blu;
+        box-shadow: 0 5px 54px $blu;
+        transition: color 120ms ease, box-shadow 200ms ease;
+      }
+      
+      // button group
+      &:first-child {
+        border-radius: 2px 0 0 2px;
+        z-index: 12;
+      }
+      
+      &:nth-child(2) {
+        z-index: 13;
+        transition:
+          color 300ms ease,
+          box-shadow 120ms ease,
+          z-index 200ms;
+        
+        &:hover {
+          z-index: 10;
+          transition:
+            color 120ms ease,
+            box-shadow 200ms ease,
+            z-index 0ms;
+        }
+      }
+      
+      &:nth-child(3) {
+        margin-right: 10px;
+        border-radius: 0 2px 2px 0;
+        z-index: 12;
+      }
+      
+      // Logout Link
+      &:last-child {
+        background: transparent;
+        color: rgba(#fff, .6);
+        border-radius: 2px;
+        box-shadow: inset 0 0 0 1px rgba(#fff, 0);
+        transition: all 200ms ease;
+        
+        &:hover {
+          color: #fff;
+          box-shadow: inset 0 0 0 1px #fff;
+          transition: all 200ms ease;
+        }
+      }
+    }
+    
+    // user name
+    &-name {
+      margin-left: 10px;
+      color: #fff; 
+      text-shadow: 0 1px #000;
+      font-weight: 400;
+      font-size: 16px;
+      
+      &:hover {
+        color: rgba(#fff, .8);
+      }
+    }
+  }
+  
+  %section {
+    display: flex;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .logo {
+    $shape-size: 28px;
+    height: $shape-size;
+    width: $shape-size;
+    color: #fff;
+    border: 2px solid;
+    border-radius: $shape-size;
+    
+    &:hover {
+      color: $blu;
+      
+      & + .navigation-name {
+        color: $blu;
+      }
+    }
+  }

@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="/stylesheets/posts/style.css">
+<div class="bg"></div>
+
+<div class="body">
+    <nav role='navigation'>
+        <div class="logo"></div>
+        <div class="navigation-name">Valoo</div>
+        <div class="navigation">
+            <a href="/">Home</a>
+            <a href="/posts">Posts</a>
+            <a href="#">About</a>
+            <a href="/login">Login</a>
+        </div>
+    </nav>
+    <section class="profile">
+
+        <div class="shared-content">
+            <p class="alert"><%= errorMessage %> </p>
+            <p class="desc">Please keep in mind that, we are using markdown syntax for posting a new post. You can see
+                the documentation <a href="https://about.gitlab.com/handbook/markdown-guide" target="_blank">here</a> or
+                see the instant preview <a href="https://markdown-previewerr.netlify.app/" target="_blank">here</a>. And
+                also this website or this web application isn't for commercial purpose. And to create new post you must
+                fill out all of the input that given to.
+            </p>
+
+            <div class="section-head">
+                <h3>Posts</h3>
+                <a href="/posts/new">Add</a>
+            </div>
+
+            <div class="content">
+                <% if (Array.isArray(posts)) { %>
+                <% posts.forEach(({author, _id, title, content})=> { %>
+                <div class="row">
+                    <div class="title"> <a href="/posts?id=<%= _id %> "><%= title %></a></div>
+                    <div class="author"><%= author %> </div>
+                    <div class="preview"><%- content %> </div>
+
+                </div>
+                <% }) %>
+                <% }else {%>
+                <p><%= posts %> </p>
+                <% } %>
+                <p class="copyright">Made by <a href="https://github.com/Aldhanekaa" target="_blank">Aldhaneka</a> </p>
+
+            </div>
+    </section>
+</div>

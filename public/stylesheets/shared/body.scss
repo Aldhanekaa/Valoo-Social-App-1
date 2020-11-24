@@ -1,0 +1,29 @@
+*, *:before, *:after { 
+    box-sizing: inherit; 
+      margin: 0;
+      padding: 0;
+  } 
+
+$blu: #69A4FC;
+$gree: #a4fc69;
+
+.bg {
+  position: static;
+  top: 0;
+height: 340px;
+  background: linear-gradient(
+    mix($blu, #000, 10),
+    mix($blu, #000, 90) 300%
+  );
+  z-index: 1;
+}
+
+.body {
+  position: absolute;
+  top: 0; 
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  width: 100%;
+  height: auto;
+}
